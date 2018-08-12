@@ -1,0 +1,182 @@
+/* colors
+#2CE8E0
+#30D0FF
+*/
+
+@import url('https://fonts.googleapis.com/css?family=BioRhyme|Cabin');
+
+* {
+    font-family: 'Cabin', sans-serif;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 0.75rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'BioRhyme', serif;
+    font-size: 1.5rem;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 20px 0;
+}
+
+a.links:link,
+a.links:visited {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: #000;
+    background-color: #2CE8E0;
+    border: none;
+    border-radius: 5px;
+}
+
+a.links:hover,
+a.links:active {
+    background-color: #30D0FF;
+}
+
+masthead img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+figure {
+    margin: 0;
+}
+
+figure img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.topics {
+    text-align: left;
+}
+
+.topics li {
+    list-style: none;
+}
+
+footer {
+    padding: 10px;
+    background-color: #2CE8E0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+footer div.social {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*Media Queries*/
+@media only screen and (min-width:35rem) {
+    
+    .wrapper {
+        min-width: 35rem;
+    }
+    
+    masthead img {
+        max-height: 400px;
+    }
+    
+    *{
+        font-size: 1rem;
+    }
+    
+    nav ul li {
+        display: inline;
+    }
+    
+    a.links:link,
+    a.links:visited,
+    a.links:hover,
+    a.links:active{
+        display: inline-block;
+        width: 150px;
+    }
+    
+    figure.home {
+        width:40%;
+        float: left;
+        margin-right: 10px;
+        border: 1px solid #000;
+        border-radius: 5px;
+    }
+    
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+    
+    .main-content {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    footer div.social {
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (min-width: 80rem) {
+    
+    *{
+        font-size: 1.25rem;
+    }
+    
+    .wrapper {
+        max-width: 80rem;
+    }
+    
+    header {
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    figure.home{
+        float: none;
+        width: 95%;
+        border: none;
+    }
+    
+    .home-container {
+        display: grid;
+        grid-template-columns: 40% auto;
+    }
+    
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 50px;
+    }
+}
